@@ -1,5 +1,5 @@
-from lxml import etree
 import re
+from lxml import etree
 
 DATE_FORMAT_IN_FILE = "%Y%m%d%H%M%S%f"
 MAX_REPORTS = 5  # maximum number of reports to read in the XML file
