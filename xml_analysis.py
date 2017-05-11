@@ -1,5 +1,7 @@
-## todo: enlever du code précédent les constantes MAX_REPORTS et MAX_DISPLAY, qui ne sont plus utilisées ici
+from lxml import etree
+import re
 
+DATE_FORMAT_IN_FILE = "%Y%m%d%H%M%S%f"
 MAX_RESULTS = 10  # Maximum number of search results to display
 
 def select_reports(filename, regexp = "", date_boundaries = None):
