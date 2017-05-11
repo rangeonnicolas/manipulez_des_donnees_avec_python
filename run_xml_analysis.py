@@ -1,10 +1,10 @@
 import argparse
-import analysis as an
+import xml_analysis as xml_an
 import logging as lg
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
-
+    
     parser.add_argument("-d","--datafile",help="""XML file containing the scripts 
         of the debates""")
     parser.add_argument("-l","--lastndays",help="""limits the search to the debates
@@ -17,7 +17,7 @@ def parse_arguments():
 
 def main():
     args = parse_arguments()    
-    an.launch_analysis(args.datafile, args.lastndays, args.enddate) ##todo: faire du packing/unpacking pour tous ces arguments?
+    xml_an.search(args.datafile, args.lastndays, args.enddate)
     
 if __name__ == '__main__':
     try:
