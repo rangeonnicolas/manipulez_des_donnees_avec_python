@@ -20,6 +20,7 @@ def main():
     xml_an.search(args.datafile, args.lastndays, args.enddate)
     
 if __name__ == '__main__':
+    main()
     try:
         main()
     except:
